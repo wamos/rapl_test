@@ -36,6 +36,7 @@ int main(int argc, char** argv){
     if(i ==0){
       pre_cpu0 = std::get<0>(pkg0);
       pre_cpu1 = std::get<0>(pkg1);
+      std::this_thread::sleep_for(std::chrono::seconds(1));
       continue;
     }
     else{
